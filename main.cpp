@@ -288,6 +288,26 @@ void screens::game()
                     selector.game();
                     break;
             }
+        case 81:
+            cout<<"\n Are you sure you want to exit?(Y/N)";
+            switch(getch())
+            {
+                case 121:
+                    selector.menu();
+                    break;
+                case 89:
+                    selector.menu();
+                    break;
+                case 110:
+                    selector.game();
+                    break;
+                case 78:
+                    selector.game();
+                    break;
+                default:
+                    selector.game();
+                    break;
+            }
         default:
             selector.game();
     }
